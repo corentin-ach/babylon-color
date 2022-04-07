@@ -256,8 +256,6 @@ function createMainBox(){
 function createSlab(){
   var slabIndex = slabs.length;
   var slab = BABYLON.Mesh.CreateBox("slab-" + slabIndex, 2, scene);
-  // slab.position.y = 6;
-  // slab.scaling.y = 0.062;
   slab.position = [0,6,0];
   slab.scaling = [1,0.062,1];
   slabs.push({slab: slab, axis: "Y"});
@@ -271,10 +269,6 @@ function createRandomSlab(){
   var slabScaling = [[1,slabScale,1], [1,slabScale,1], [slabScale,1,1], [slabScale,1,1]];
   var rand = getRandomInt(0, 5);
   var materialIndex = getRandomInt(0, materials.length - 1);
-
-  //TODO
-  //rand = 4;
-  //materialIndex = 0;
 
   /*
   purple 5
